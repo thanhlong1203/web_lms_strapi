@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chapters",
+  "info": {
+    "name": "Chapter",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ChapterName": {
+      "type": "string"
+    },
+    "course": {
+      "model": "course"
+    }
+  }
+}

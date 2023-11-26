@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_lessions",
+  "info": {
+    "name": "UserLession",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "lession": {
+      "model": "lession"
+    }
+  }
+}
