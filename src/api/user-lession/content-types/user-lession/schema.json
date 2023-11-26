@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_lessions",
+  "info": {
+    "singularName": "user-lession",
+    "pluralName": "user-lessions",
+    "displayName": "UserLession"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "User": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "Lession": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::lession.lession"
+    },
+    "IsCompleted": {
+      "type": "integer"
+    }
+  }
+}

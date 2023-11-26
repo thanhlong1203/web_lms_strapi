@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lessions",
+  "info": {
+    "singularName": "lession",
+    "pluralName": "lessions",
+    "displayName": "Lession"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "LessionName": {
+      "type": "string"
+    },
+    "LessionType": {
+      "type": "string"
+    },
+    "Chapter": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::chapter.chapter"
+    }
+  }
+}
